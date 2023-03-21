@@ -1,0 +1,6 @@
+Average Payment: 5300.0
+The lowest Payment: 5300.0
+The highest Payment: 5300.0
+Employees IT: 5300.0
+Employees Support: 5300.0
+Employees Management: 5300.0
