@@ -29,30 +29,10 @@ public class EmployeeStats {
 
     }
 
-    static int itEmployee(Employee[] employees) {
+    static int departmentEmployee(Employee[] employees, String department) {
         int count = 0;
         for (Employee employee : employees) {
-            if (employee.getDepartment().equals("IT")) {
-                count++;
-            }
-        }
-        return count;
-    }
-
-    static int supportEmployee(Employee[] employees) {
-        int count = 0;
-        for (Employee employee : employees) {
-            if (employee.getDepartment().equals("Support")) {
-                count++;
-            }
-        }
-        return count;
-    }
-
-    static int managementEmployee(Employee[] employees) {
-        int count = 0;
-        for (Employee employee : employees) {
-            if (employee.getDepartment().equals("Management")) {
+            if (employee.getDepartment().equals(department)) {
                 count++;
             }
         }

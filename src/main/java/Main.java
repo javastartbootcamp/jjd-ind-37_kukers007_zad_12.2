@@ -12,17 +12,17 @@ public class Main {
             File stats = new File("stats.txt");
             stats.createNewFile();
             FileWriter fileWriter = new FileWriter(stats);
-            fileWriter.write("Average Payment: " + EmployeeStats.avgPayment(employees));
+            fileWriter.write("Średnia wypłata: " + EmployeeStats.avgPayment(employees));
             fileWriter.write("\n");
-            fileWriter.write("The lowest Payment: " + EmployeeStats.avgPayment(employees));
+            fileWriter.write("Minimalna wypłata: " + EmployeeStats.minPayment(employees));
             fileWriter.write("\n");
-            fileWriter.write("The highest Payment: " + EmployeeStats.avgPayment(employees));
+            fileWriter.write("Maksymalna wypłata: " + EmployeeStats.maxPayment(employees));
             fileWriter.write("\n");
-            fileWriter.write("Employees IT: " + EmployeeStats.avgPayment(employees));
+            fileWriter.write("Liczba pracowników IT: " + EmployeeStats.departmentEmployee(employees, "IT"));
             fileWriter.write("\n");
-            fileWriter.write("Employees Support: " + EmployeeStats.avgPayment(employees));
+            fileWriter.write("Liczba pracowników Support: " + EmployeeStats.departmentEmployee(employees, "Support"));
             fileWriter.write("\n");
-            fileWriter.write("Employees Management: " + EmployeeStats.avgPayment(employees));
+            fileWriter.write("Liczba pracowników Management: " + EmployeeStats.departmentEmployee(employees, "Management"));
             fileWriter.close();
         }
     }
